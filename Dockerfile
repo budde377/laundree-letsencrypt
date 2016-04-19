@@ -11,6 +11,8 @@ RUN chmod 0644 /etc/cron.d/letsencrypt;\
 
 RUN mkdir /var/www
 
+VOLUME /var/certs
+
 EXPOSE 80
 
 ENTRYPOINT ["./entrypoint.sh"]
