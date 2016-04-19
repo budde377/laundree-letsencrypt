@@ -1,1 +1,1 @@
-* * * * * root echo `date` >> /var/log/cron.log 2>&1
+* * * * * root /opt/certbot/venv/bin/certbot --standalone certonly --agree-tos --email budde377@gmail.com -d laundree.io >> /var/log/cron.log 2>&1
