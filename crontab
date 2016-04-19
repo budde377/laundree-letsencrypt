@@ -1,1 +1,1 @@
-* * * * * root /opt/certbot/venv/bin/certbot --standalone certonly --agree-tos --email budde377@gmail.com -d laundree.io >> /var/log/cron.log 2>&1
+* * * * * root /opt/certbot/venv/bin/certbot certonly --standalone-supported-challenges http-01 --agree-tos --email budde377@gmail.com -d laundree.io >> /var/log/cron.log 2>&1

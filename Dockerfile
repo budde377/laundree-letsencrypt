@@ -11,4 +11,6 @@ RUN apt-get update;\
 RUN chmod 0644 /etc/cron.d/letsencrypt;\
     touch /var/log/cron.log
 
+EXPOSE 80
+
 ENTRYPOINT ["./entrypoint.sh"]
