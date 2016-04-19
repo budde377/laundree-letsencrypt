@@ -1,1 +1,1 @@
-* * * * * root echo `date` > /var/log/cron.log 2>>&1
+* * * * * root echo `date` >> /var/log/cron.log 2>&1
