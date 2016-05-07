@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
-./cron.sh
+sed "s@{{TRIGGER}}@$TRIGGER@" cron.sh > cron-generated.sh
+
+chmod +x cron-generated.sh
+./cron-generated.sh no-renew
 
 echo "Starting Cron"
 cron

@@ -1,1 +1,1 @@
-0 0 1 * * root /opt/certbot/cron.sh >> /var/log/cron.log 2>&1
+0 0 1 * * root /opt/certbot/cron-generated.sh >> /var/log/cron.log 2>&1
