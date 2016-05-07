@@ -6,10 +6,12 @@ COPY crontab /etc/cron.d/letsencrypt
 COPY entrypoint.sh .
 COPY cron.sh .
 
-RUN chmod 0644 /etc/cron.d/letsencrypt;\
-    touch /var/log/cron.log
+RUN apt-get update; \
+    apt-get install -y curl
 
-RUN mkdir /var/www
+RUN chmod 0644 /etc/cron.d/letsencrypt;\
+    touch /var/log/cron.log; \
+    mkdir /var/www
 
 VOLUME /var/certs
 
