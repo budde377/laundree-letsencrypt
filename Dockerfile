@@ -2,6 +2,8 @@ FROM quay.io/letsencrypt/letsencrypt:latest
 
 MAINTAINER Christian Budde Christensen <budde377@gmail.com>
 
+ENV TRIGGER ""
+
 COPY crontab /etc/cron.d/letsencrypt
 COPY entrypoint.sh .
 COPY cron.sh .

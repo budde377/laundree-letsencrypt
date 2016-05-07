@@ -2,7 +2,7 @@
 
 source /opt/certbot/venv/bin/activate
 
-TRIGGER = {{TRIGGER}}
+TRIGGER={{TRIGGER}}
 
 cd /var/www
 python -m SimpleHTTPServer 80 &
