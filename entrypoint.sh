@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-sed "s@{{TRIGGER}}@$TRIGGER@" cron.sh > cron-generated.sh
+sed "s/{{HOST}}/$HOST/" cron.sh > cron-generated.sh
+sed -i "s@{{TRIGGER}}@$TRIGGER@" cron-generated.sh
 
 chmod +x cron-generated.sh
 ./cron-generated.sh no-renew

@@ -2,6 +2,7 @@ FROM quay.io/letsencrypt/letsencrypt:latest
 
 MAINTAINER Christian Budde Christensen <budde377@gmail.com>
 
+ENV HOST example.com
 ENV TRIGGER ""
 
 COPY crontab /etc/cron.d/letsencrypt
